@@ -11,4 +11,6 @@ fun main() {
     var example:Any ="Аааа"; //Any - тип данных, который позволяет хранить в переменной любое значение
     example = 12345;
 
+    println("Input your name:");
+    println("Your name is "+ readln());
 }
