@@ -57,4 +57,9 @@ fun main() {
     for(i in 1..9){ //for эквивалентен foreach
         println(i*i)
     }
+
+    var range = 'a'..'d'; //диапазон a,b,c,d
+    var range2 = 5 downTo 1;  //5,4,3,2,1
+    var range3 = 1..10 step 2; //1,3,5,7,9
+    var range4 = 1 until 5 //1,2,3,4
 }
