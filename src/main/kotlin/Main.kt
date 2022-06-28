@@ -18,4 +18,6 @@ fun main() {
     println(8 or 15); //дизъюнкция
     println(15 xor -8); //xor
     println(15.inv()); //отрицание
+
+    println(((2 in 1..6) and !(true or false)) xor true) //логические операции
 }
