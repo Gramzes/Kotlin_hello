@@ -8,11 +8,11 @@ fun main() {
        все значения с плавающей точкой, как Double.
        Чтобы получить нужный тип, приписываем к значению нужную букву L-Long, F-Float и т.д.
     """.trimMargin()
-    var example:Any ="Аааа"; //Any - тип данных, который позволяет хранить в переменной любое значение
+    var example: Any = "Аааа"; //Any - тип данных, который позволяет хранить в переменной любое значение
     example = 12345;
 
     println("Input your name:");
-    println("Your name is "+ readln());
+    println("Your name is " + readln());
 
     println(8 and 15); //конъюнкция
     println(8 or 15); //дизъюнкция
@@ -20,4 +20,37 @@ fun main() {
     println(15.inv()); //отрицание
 
     println(((2 in 1..6) and !(true or false)) xor true) //логические операции
+
+    var a = if (city == "Moscow") { //задание переменной с помощью if
+    "Best city";
+    } else if (city == "Dubna") {
+    "Not best city";
+    } else {
+    "Not best city";
+    }
+    // или
+    if (city=="Moscow") "best city" else "Not best city"
+
+    when (city){                    //замена switch
+        "Moscow" -> {
+            println("Best city");
+            println("Best city");
+        }
+        "Dubna", "Dmitrov" -> println("Not best");
+        else -> "ok";
+    }
+
+    when (val age1 = age+1){
+        in 1..100 -> println("child");
+        10+10 -> println("child");
+    }
+
+    when{
+        age+1>age -> age+=1;
+    }
+    age = when{
+        age+1>age -> age;
+        else -> age-1;
+    }
+
 }
