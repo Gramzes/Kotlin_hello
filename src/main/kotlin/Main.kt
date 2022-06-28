@@ -13,4 +13,9 @@ fun main() {
 
     println("Input your name:");
     println("Your name is "+ readln());
+
+    println(8 and 15); //конъюнкция
+    println(8 or 15); //дизъюнкция
+    println(15 xor -8); //xor
+    println(15.inv()); //отрицание
 }
