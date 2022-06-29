@@ -68,4 +68,26 @@ fun main() {
     array = Array(4,{i++*2});
     var array2:Array<CharArray> = arrayOf(charArrayOf('a','b','c'));
     array2 = Array(2,{ charArrayOf('a','b','c') });
+
+    println(stepen(2,4));
+    println(stepen(2,b=4));
+    val nums = intArrayOf(1, 2, 3, 4)
+    changeNumbers(*nums, koef=2) //передача массива в параметры производится с помощью *
+    fun kvadrat(a:Int) = a*a; //однострочная функция
+
+    var test: (Int) -> Int = ::kvadrat;
+    print("2^2="+test(2));
+
+}
+fun changeNumbers(vararg numbers: Int, koef: Int){
+    for(number in numbers)
+        println(number * koef)
+}
+
+fun stepen(a:Int, b:Int = 2): Int{  //параметры передаются как val, поэтому их нельзя изменять в функции
+    var c:Int = a;
+    for (i in 1..b){
+        c*=a;
+    }
+    return c;
 }
