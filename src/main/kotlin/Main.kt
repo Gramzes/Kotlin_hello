@@ -62,4 +62,10 @@ fun main() {
     var range2 = 5 downTo 1;  //5,4,3,2,1
     var range3 = 1..10 step 2; //1,3,5,7,9
     var range4 = 1 until 5 //1,2,3,4
+
+    var array:Array<Int> = arrayOf(1,2,3,4);
+    var i = 1;
+    array = Array(4,{i++*2});
+    var array2:Array<CharArray> = arrayOf(charArrayOf('a','b','c'));
+    array2 = Array(2,{ charArrayOf('a','b','c') });
 }
